@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(225deg, rgb(37, 2, 2) 50%, #960617);
+    padding: 10px;
+    box-shadow: 0 0 15px rgb(255, 255, 255); 
+}
+
+.box {
+    width: 100%;
+    max-width: 540px;
+    background: whitesmoke;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+     border-radius: 20px;
+    box-shadow: 0 0 30px rgb(255, 255, 255); 
+}
+.box h2{
+    font-size: 28px;
+    color:#05347a;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.row{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background:gainsboro;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px; 
+}
+.row button:hover {
+    background: #2980b9; 
+}
+input{
+    flex:1;
+    border: none;
+    outline:none;
+    background: transparent;
+    padding: 10px;
+    font-size:15px;
+}
+.box button{
+    border:none;
+    outline: none;
+    padding: 16px 50px;
+    background:rgb(3, 145, 3);
+    color:whitesmoke;
+    font-size:16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+.box ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 17px 50px;
+    user-select: none;
+    cursor: pointer;
+    position:relative;
+}
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url('unchecked.jpg');
+    background-size: cover;
+    top: 7px;
+    left: 8px;
+}
+ul li.checked{
+    color:#555;
+    text-decoration: line-through;
+}
+ul li.checked::before {
+    background-image: url('checked.jpg');
+}
+ul li i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
+    transition: font-size 0.3s ease-in-out; 
+}
+
+ul li i:hover {
+    color: #960617;
+    font-size: 24px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
